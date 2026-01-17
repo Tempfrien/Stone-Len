@@ -19,19 +19,22 @@ def apply_custom_style():
 
         /* --- ส่วนที่ 2: หัวข้อ STONE LEN --- */
         .main-title {
-            color: #dcb799 !important;
-            font-size: 80px !important;
+            color: #ffffff !important; /* สีไส้หลอดไฟเป็นสีขาว */
+            font-size: 100px !important;
             font-weight: 900;
-            text-shadow: 3px 3px 15px rgba(0,0,0,0.8);
-            margin-top: -60px !important; 
             text-align: left;
-            /* คำสั่งเรืองแสง: ใช้สีสว่างหลายๆ ชั้น */
-            text-shadow: 0 0 10px #dcb799, 
-                         0 0 20px #dcb799, 
-                         0 0 30px #ffffff; 
-                         
-            margin-top: -60px !important; 
-            text-align: left;
+            margin-top: -60px !important;
+            font-family: 'Arial Black', sans-serif; /* ใช้ฟอนต์ตัวหนาเพื่อให้แสงออกชัด */
+            
+            /* การไล่ระดับแสงนีออน (Neon Glow Layers) */
+            text-shadow: 
+                0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #ffaa00, /* เริ่มเป็นสีส้ม */
+                0 0 40px #ffaa00,
+                0 0 80px #ffaa00,
+                0 0 90px #ffaa00,
+                0 0 100px #ffaa00;
         }
 
         /* --- ส่วนที่ 3: กล่องอัปโหลด --- */
