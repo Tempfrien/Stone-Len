@@ -85,7 +85,7 @@ def apply_custom_style():
         /* --- ส่วนที่ 6: สไตล์สำหรับรูปภาพที่แปะไว้กับที่ (Fixed Image) --- */
         .fixed-image {
             position: fixed;
-            margin-top: -500px !important;
+            margin-top: -550px !important;
             right: 20px;
             width: 350px;
             z-index: 1000;
