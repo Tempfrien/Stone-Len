@@ -25,6 +25,13 @@ def apply_custom_style():
             text-shadow: 3px 3px 15px rgba(0,0,0,0.8);
             margin-top: -60px !important; 
             text-align: left;
+            /* คำสั่งเรืองแสง: ใช้สีสว่างหลายๆ ชั้น */
+            text-shadow: 0 0 10px #dcb799, 
+                         0 0 20px #dcb799, 
+                         0 0 30px #ffffff; 
+                         
+            margin-top: -60px !important; 
+            text-align: left;
         }
 
         /* --- ส่วนที่ 3: กล่องอัปโหลด --- */
