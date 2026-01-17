@@ -87,7 +87,7 @@ def apply_custom_style():
             position: fixed;
             margin-top: -500px !important;
             right: 20px;
-            width: 300px;
+            width: 350px;
             z-index: 1000;
             filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
             border-radius: 10px;
