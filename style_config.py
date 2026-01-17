@@ -74,12 +74,12 @@ def apply_custom_style():
             position: fixed;
             left: 0;
             bottom: 0;
-            width: 100%;
+            width: 150%;
             background-color: rgba(45, 62, 51, 0.95);
             color: white;
             text-align: center;
             padding: 12px 0;
-            font-size: 14px;
+            font-size: 24px;
             z-index: 9999;
             border-top: 1px solid rgba(255,255,255,0.1);
         }
