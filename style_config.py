@@ -19,18 +19,16 @@ def apply_custom_style():
 
         /* --- ส่วนที่ 2: หัวข้อ STONE LEN --- */
         .main-title {
-            color: #ffffff !important; /* สีไส้หลอดไฟเป็นสีขาว */
+            color: #ffffff !important;
             font-size: 80px !important;
             font-weight: 900;
             text-align: left;
             margin-top: -60px !important;
-            font-family: 'Arial Black', sans-serif; /* ใช้ฟอนต์ตัวหนาเพื่อให้แสงออกชัด */
-            
-            /* การไล่ระดับแสงนีออน (Neon Glow Layers) */
+            font-family: 'Arial Black', sans-serif;
             text-shadow: 
                 0 0 5px #fff,
                 0 0 10px #fff,
-                0 0 20px #ffaa00, /* เริ่มเป็นสีส้ม */
+                0 0 20px #ffaa00,
                 0 0 40px #ffaa00,
                 0 0 80px #ffaa00,
                 0 0 90px #ffaa00,
@@ -69,20 +67,30 @@ def apply_custom_style():
             color: #333;
         }
 
-        /* --- ส่วนที่ 5: แถบรายชื่อด้านล่าง (ต้องอยู่ใน <style>) --- */
+        /* --- ส่วนที่ 5: แถบรายชื่อด้านล่าง --- */
         .footer-bar {
             position: fixed;
             left: 0;
-            margin-left: -350px !important;
             bottom: 0;
-            width: 150%;
+            width: 100%; /* เปลี่ยนกลับเป็น 100% เพื่อให้พอดีจอ */
             background-color: rgba(45, 62, 51, 0.95);
             color: white;
             text-align: center;
             padding: 12px 0;
-            font-size: 24px;
+            font-size: 14px; /* ปรับขนาดให้พอดี */
             z-index: 9999;
             border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* --- ส่วนที่ 6: สไตล์สำหรับรูปภาพที่แปะไว้กับที่ (Fixed Image) --- */
+        .fixed-image {
+            position: fixed;
+            bottom: 80px; /* ขยับขึ้นมาจาก Footer เล็กน้อย */
+            right: 20px;
+            width: 150px;
+            z-index: 1000;
+            filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+            border-radius: 10px;
         }
         </style>
     """, unsafe_allow_html=True)
