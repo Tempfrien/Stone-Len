@@ -80,7 +80,7 @@ def apply_custom_style():
         }
         .fixed-image img {
             width: 100% !important;
-            border-radius: 0 0 0 25px !important;
+            border-radius: 0 0 0 30px !important;
             object-fit: cover;
         }
 
@@ -100,7 +100,7 @@ def apply_custom_style():
 
         /* --- SECTION 8: ปรับแต่งสำหรับมือถือ (Responsive) --- */
         @media (max-width: 768px) {
-            .fixed-image { width: 130px; border-radius: 0 0 0 15px !important; }
+            .fixed-image { width: 130px; border-radius: 0 0 0 10px !important; }
             .main-title { font-size: 45px !important; margin-top: -30px !important; }
             .footer-bar { font-size: 12px; }
             [data-testid="stFileUploader"] { width: 100% !important; }
