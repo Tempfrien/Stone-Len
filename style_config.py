@@ -15,7 +15,18 @@ def apply_custom_style():
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
+        
         }
+        /* สั่งซ่อน Footer มาตรฐานของ Streamlit (ไอคอนโปรไฟล์และมงกุฎ) */
+        footer {visibility: hidden;}
+        
+        /* สั่งซ่อนปุ่มปุ่มที่อาจจะค้างอยู่ตรงมุมขวาล่าง */
+        .viewerBadge_container__1QSob {display: none !important;}
+        [data-testid="stStatusWidget"] {display: none !important;}
+        
+        /* สั่งซ่อนส่วนที่ระบุว่าสร้างด้วย Streamlit */
+        #MainMenu {visibility: hidden;}
+        header {visibility: hidden;}
 
         /* --- ส่วนที่ 2: หัวข้อ STONE LEN --- */
         .main-title {
