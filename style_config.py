@@ -3,12 +3,12 @@ import streamlit as st
 def apply_custom_style():
     st.markdown("""
         <style>
-        /* --- ส่วนที่ 1: จัดการหน้าเว็บและซ่อนองค์ประกอบระบบ --- */
-        header {visibility: hidden;}
-        footer {visibility: hidden;}
-        #MainMenu {visibility: hidden;}
-        .stDeployButton {display:none;}
-        [data-testid="stDecoration"] {display:none;}
+        /* --- ส่วนที่ 1: ซ่อนองค์ประกอบระบบและตกแต่งพื้นหลัง --- */
+        header {visibility: hidden; display: none !important;}
+        footer {visibility: hidden; display: none !important;}
+        #MainMenu {visibility: hidden; display: none !important;}
+        .stDeployButton {display:none !important;}
+        [data-testid="stDecoration"] {display:none !important;}
         [data-testid="stStatusWidget"] {display: none !important;}
         .viewerBadge_container__1QSob {display: none !important;}
 
@@ -20,7 +20,7 @@ def apply_custom_style():
             background-attachment: fixed;
         }
 
-        /* --- ส่วนที่ 2: หัวข้อ STONE LEN (Neon Style) --- */
+        /* --- ส่วนที่ 2: หัวข้อนีออนเรืองแสง --- */
         .main-title {
             color: #ffffff !important;
             font-size: 80px !important;
@@ -29,16 +29,28 @@ def apply_custom_style():
             margin-top: -60px !important;
             font-family: 'Arial Black', sans-serif;
             text-shadow: 
-                0 0 5px #fff,
-                0 0 10px #fff,
-                0 0 20px #ffaa00,
-                0 0 40px #ffaa00,
-                0 0 80px #ffaa00,
-                0 0 90px #ffaa00,
-                0 0 100px #ffaa00;
+                0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ffaa00,
+                0 0 40px #ffaa00, 0 0 80px #ffaa00, 0 0 90px #ffaa00, 0 0 100px #ffaa00;
         }
 
-        /* --- ส่วนที่ 3: กล่องอัปโหลด --- */
+        /* --- ส่วนที่ 3: ปุ่มสลับหน้าและการตกแต่งปุ่ม --- */
+        .stButton > button {
+            background-color: #dcb799 !important;
+            color: white !important;
+            border-radius: 20px !important;
+            padding: 10px 25px !important;
+            font-weight: bold !important;
+            border: 2px solid #fff !important;
+            transition: 0.3s;
+        }
+        .stButton > button:hover {
+            background-color: #ffffff !important;
+            color: #2d3e33 !important;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255,170,0,0.4);
+        }
+
+        /* --- ส่วนที่ 4: กล่องรับไฟล์และกล่องแสดงผล --- */
         [data-testid="stFileUploader"] {
             width: 350px !important; 
             margin: 0 auto !important;
@@ -46,26 +58,17 @@ def apply_custom_style():
         [data-testid="stFileUploader"] section {
             background-color: rgba(255, 255, 255, 0.9) !important;
             border-radius: 20px !important;
-            padding: 30px !important;
+        }
+        .result-box {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            color: #333333 !important;
+            margin-top: 10px;
         }
 
-        /* --- ส่วนที่ 4: ปุ่ม Upload file --- */
-        button[kind="secondary"] {
-            font-size: 0 !important;
-            border-radius: 30px !important;
-            padding: 10px 30px !important;
-            background-color: white !important;
-            border: 1px solid #ccc !important;
-            display: block !important;
-            margin: 0 auto !important;
-        }
-        button[kind="secondary"]::after {
-            content: "Upload file";
-            font-size: 16px !important;
-            color: #333;
-        }
-
-        /* --- ส่วนที่ 5: แถบรายชื่อด้านล่าง --- */
+        /* --- ส่วนที่ 5: แถบ Footer และโลโก้ Fixed --- */
         .footer-bar {
             position: fixed;
             left: 0;
@@ -77,10 +80,7 @@ def apply_custom_style():
             padding: 12px 0;
             font-size: 20px;
             z-index: 9999;
-            border-top: 1px solid rgba(255,255,255,0.1);
         }
-
-        /* --- ส่วนที่ 6: โลโก้มุมขวาบนขอบโค้ง --- */
         .fixed-image {
             position: fixed;
             top: 0;
@@ -94,20 +94,6 @@ def apply_custom_style():
             width: 100% !important;
             border-radius: 0 0 0 35px !important;
             object-fit: cover;
-        }
-
-        /* --- ส่วนที่ 7: กล่องแสดงผลการวิเคราะห์ AI --- */
-        .result-box {
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 20px;
-            padding: 25px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-            color: #333333 !important;
-            margin-top: 20px;
-        }
-        .result-box h2 {
-            color: #2d3e33 !important;
-            margin-bottom: 15px;
         }
         </style>
     """, unsafe_allow_html=True)
