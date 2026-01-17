@@ -86,7 +86,7 @@ def apply_custom_style():
         .fixed-image {
             position: fixed;
             margin-top: -530px !important;
-            margin-left: 0px;
+            margin-left: -500px;
             width: 350px;
             z-index: 1000;
             filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
