@@ -103,6 +103,5 @@ def apply_custom_style():
             /* 2. บรรทัดนี้สำคัญมาก! สั่งให้ตัดรูปส่วนที่เกินความโค้งทิ้ง */
             overflow: hidden !important;
         }
-        }
         </style>
     """, unsafe_allow_html=True)
