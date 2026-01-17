@@ -20,7 +20,7 @@ def apply_custom_style():
         /* --- ส่วนที่ 2: หัวข้อ STONE LEN --- */
         .main-title {
             color: #ffffff !important; /* สีไส้หลอดไฟเป็นสีขาว */
-            font-size: 100px !important;
+            font-size: 80px !important;
             font-weight: 900;
             text-align: left;
             margin-top: -60px !important;
@@ -73,6 +73,7 @@ def apply_custom_style():
         .footer-bar {
             position: fixed;
             left: 0;
+            margin-left: 10px !important;
             bottom: 0;
             width: 150%;
             background-color: rgba(45, 62, 51, 0.95);
