@@ -89,8 +89,20 @@ def apply_custom_style():
             margin-left: 850px;
             width: 350px;
             z-index: 1000;
-            /* ทำให้มุมโค้งมน */
+/* --- ส่วนที่ 6: สไตล์สำหรับรูปภาพที่แปะไว้กับที่ (Fixed Image) --- */
+        .fixed-image {
+            position: fixed;
+            margin-top: -530px !important;
+            margin-left: 850px;
+            width: 350px;
+            z-index: 1000;
+            
+            /* 1. กำหนดความโค้ง */
             border-radius: 100px !important;
+            
+            /* 2. บรรทัดนี้สำคัญมาก! สั่งให้ตัดรูปส่วนที่เกินความโค้งทิ้ง */
+            overflow: hidden !important;
+        }
         }
         </style>
     """, unsafe_allow_html=True)
