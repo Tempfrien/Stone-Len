@@ -79,7 +79,7 @@ def apply_custom_style():
             color: white;
             text-align: center;
             padding: 12px 0;
-            font-size: 14px;
+            font-size: 20px;
             z-index: 9999;
             border-top: 1px solid rgba(255,255,255,0.1);
         }
@@ -90,7 +90,7 @@ def apply_custom_style():
             /* เปลี่ยนจาก margin เป็นการกำหนดตำแหน่งคงที่ */
             top: 0;       /* ปรับระยะห่างจากขอบบนตามใจชอบ */
             right: 0;      /* ปรับระยะห่างจากขอบขวาตามใจชอบ */
-            width: 350px;
+            width: 325px;
             z-index: 1000;
             
             border-radius: 0 0 0 35px !important; 
