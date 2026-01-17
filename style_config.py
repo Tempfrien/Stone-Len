@@ -95,7 +95,7 @@ def apply_custom_style():
             border-radius: 0 100px 0 0 !important; 
             
             overflow: hidden !important;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            box-shadow: 0 0 0 rgba(0,0,0,0);
         }
 
         .fixed-image img {
@@ -105,12 +105,6 @@ def apply_custom_style():
             object-fit: cover;
         }
 
-        /* บังคับรูปข้างในให้เต็มกล่องและโค้งตาม */
-        .fixed-image img {
-            width: 100% !important;
-            height: auto;
-            border-radius: 50px !important;
-            object-fit: cover;
-        }
+
         </style>
     """, unsafe_allow_html=True)
