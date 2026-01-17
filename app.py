@@ -12,8 +12,11 @@ apply_custom_style()
 st.markdown('<h1 class="main-title">STONE LEN</h1>', unsafe_allow_html=True)
 st.markdown("""
     <p style="color: white; font-size: 20px; text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
-              position: relative; top: -45px; left: 10px; margin-bottom: -40px;">
+              position: relative; top: -30px; left: 10px; margin-bottom: -40px;">
         ROCK CLASSIFICATION WEBSITE : เว็บไซต์จำแนกประเภทหิน เพื่อการศึกษาทางธรณีวิทยา
+        วิธีใช้งาน
+        1.ถ่ายรูปภาพหินที่ต้องการทราบชนิด
+        2.อัปโหลดรูปภาพลงในช่องอัปโหลด
     </p>
     """, unsafe_allow_html=True)
 
