@@ -86,7 +86,6 @@ def apply_custom_style():
         .fixed-image {
             position: fixed;
             margin-top: 0px !important;
-            bottom: 80px; /* ขยับขึ้นมาจาก Footer เล็กน้อย */
             right: 20px;
             width: 150px;
             z-index: 1000;
