@@ -90,7 +90,7 @@ def apply_custom_style():
             width: 350px;
             z-index: 1000;
             /* ทำให้มุมโค้งมน */
-            border-radius: 25px;
+            border-radius: 100px !important;
         }
         </style>
     """, unsafe_allow_html=True)
