@@ -73,9 +73,15 @@ st.markdown("""
     </div>
     """, unsafe_allow_html=True)
 
-# 6. ติดโลโก้ ใส่รูปภาพแบบ Fixed (เปลี่ยน URL รูปภาพเป็นรูปที่คุณต้องการ)
+# 1. ตั้งค่าหน้าเว็บและดึงสไตล์
+st.set_page_config(page_title="STONE LEN - Rock Classification", layout="wide")
+apply_custom_style()
+
+# --- ย้ายส่วนที่ 6 มาไว้ตรงนี้ (บนสุดของเนื้อหา) ---
 st.markdown("""
     <div class="fixed-image">
-        <img src="https://lh3.googleusercontent.com/u/0/d/1j2yrrBp-xXv1vfk4fdrIxZxVmyX4Bszu" width="200%" !important;>
+        <img src="https://lh3.googleusercontent.com/u/0/d/1j2yrrBp-xXv1vfk4fdrIxZxVmyX4Bszu" width="100%">
     </div>
     """, unsafe_allow_html=True)
+
+# 2. แสดงผล UI (ส่วนหัว) ต่อไปตามปกติ...
