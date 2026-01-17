@@ -8,6 +8,14 @@ from style_config import apply_custom_style
 st.set_page_config(page_title="STONE LEN - Rock Classification", layout="wide")
 apply_custom_style()
 
+# ตั้งค่า Session State สำหรับเลือกหน้า (ถ้ายังไม่มีให้สร้างเป็น 'Home')
+if 'page' not in st.session_state:
+    st.session_state.page = 'Home'
+
+# ฟังก์ชันสำหรับเปลี่ยนหน้า
+def change_page(page_name):
+    st.session_state.page = page_name
+
 # 2. ติดโลโก้ Fixed (วางไว้บนสุดเพื่อให้โหลดค้างไว้ตลอดเวลา)
 st.markdown("""
     <div class="fixed-image">
