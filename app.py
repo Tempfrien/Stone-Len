@@ -125,8 +125,7 @@ elif st.session_state.page == 'Knowledge':
             <p>-เป็นหินแปรที่เนื้อแน่น แร่ธาตุไม่เรียงตัวเป็นชั้น มักเกิดจากการแปรสภาพแบบสัมผัส (ความร้อนสูง)</p>
             <br>
             <br>
-            <br>
-            <b>แหล่งที่มา :</b> https://www.dmr.go.th และ Mindat.org
+            <b>แหล่งที่มา :</b> Mindat.org
         </div>
     """, unsafe_allow_html=True)
 
