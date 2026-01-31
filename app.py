@@ -126,7 +126,7 @@ elif st.session_state.page == 'Knowledge':
             <br>
             <br>
             <br>
-            <b>แหล่งที่มา</b> https://www.dmr.go.th และ Mindat.org
+            <b>แหล่งที่มา :</b> https://www.dmr.go.th และ Mindat.org
         </div>
     """, unsafe_allow_html=True)
 
